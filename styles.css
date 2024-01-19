@@ -1,0 +1,456 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.overlay {
+    position: absolute;
+    padding-top: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+    height:100vh;
+    background-color: black;
+    opacity: 0.8;
+    padding-bottom: 30px;
+    
+}
+
+.overlay h1 {
+    font-size: 30px;
+    font-weight: 900;
+    font-style: oblique;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size:18px;
+    
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    
+}
+
+button {
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size:13px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid rgb(210, 255, 48);
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+button:hover {
+    background-color: rgba(73, 35, 156, 0.323);
+    color: rgb(255, 255, 255);
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+.college-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.college-logo {
+    width: 100px; /* Set the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing between the logo and the heading */
+}
+.event-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.event-container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+    .event-container2 h2
+    {
+ 
+    font-size: 20px;
+    font-family:monospace;
+    
+    
+}
+.event-container2 p
+    {
+ 
+    font-size: 20px;
+    font-family:monospace;
+    
+    
+}
+
+.event2{
+    border: 3px;
+    border-color: rgb(210, 255, 48);
+}
+.event {
+    flex: 1;
+    max-width: 300px; /* Set maximum width for each event */
+    margin: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.event img {
+    max-width: 100%;
+    height: auto;
+}
+.event-container2 img{
+    height: 90px;
+    width: 250px;
+    padding-left: 350px;
+    
+}
+.event-container3 p{
+    font-size: 17px;
+    text-align: justify;
+}
+.event-container3 p{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.event-container3 h1{
+    font-size: 18px;
+    text-align:center;
+}
+.event-container3 h2{
+    font-size: 17px;
+    text-align:center;
+}
+
+.overlay2 {
+    position: absolute;
+    padding-top: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+    height:800px;
+    background-color: black;
+    opacity: 0.8;
+    padding-bottom: 30px;
+    
+}
+
+.overlay2 h2 {
+    font-size: 19PX;
+    margin-bottom: 10px;
+}
+
+.overlay2 p {
+    font-size:17px;
+    
+}
+/*-------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 600px) {
+    .overlay {
+        width: 90%;
+    }
+}
+/*-------------------------------------------------------------------------------*/
+@media (max-width: 768px) {
+    .event {
+        flex-basis:48%; /* Two events per row on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .overlay {
+        position: absolute;
+        padding-top: 140px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        width: 80%;
+        height:100vh;
+        background-color: black;
+        opacity: 0.8;
+        padding-bottom: 30px;
+        font-size: 10px;
+        
+    }
+    .overlay h1{
+        font-size: 17px;
+        text-align: center;
+        font-weight: 1000;
+        font-style: oblique;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .overlay p{
+        font-size: 18px;
+        }
+    .overlay img{
+        height: 100px;
+        width: 340px;
+    }
+    .overlay .college-logo {
+        width: 70px; /* Set the width of the logo */
+        height: auto; /* Maintain aspect ratio */
+        margin-right:6px; /* Add spacing between the logo and the heading */
+    }
+    .overlay .college-info {
+        
+       display: contents;
+       font-size: 17px;
+        
+    }
+    button {
+        cursor: pointer;
+        margin: 0 5px;
+        padding: 7px 17px;
+        font-size: 12px;
+        color: white;
+        background-color: transparent;
+        border: 2px solid rgb(210, 255, 48);
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+        
+       font-weight: 600;
+        
+    }
+    .event-container {
+        display: flex;
+        flex-direction: row;
+        padding: 32px;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+        font-size: 6px; 
+        
+    }
+    .event-container2 {
+        display: flex;
+        flex-direction: row;
+        padding: 32px;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+        font-size: 6px; 
+        
+    }
+    
+    .event-container h3 {
+        font-size: 17px;
+
+       }
+    
+    
+        .event-container2 h2
+        {
+     
+        font-size: 20px;
+        font-family:monospace;
+        
+        
+    }
+    .event-container2 p
+        {
+     
+        font-size: 17px;
+        font-family:monospace;
+        
+        
+    }
+    .event-container2 img{
+        height: 90px;
+        width: 250px;
+        padding-left: 50px;
+        
+    }
+
+    .overlay2 {
+        position: absolute;
+        
+        text-align: center;
+        color: white;
+        width: 95%;
+        height:100vh;
+        background-color: black;
+        opacity: 0.8;
+        padding-bottom: 30px;
+        
+        
+    }
+    
+    .overlay2 h1 {
+        font-size: 15PX;
+        margin-bottom: 10px;
+    }
+    
+    .overlay2 p {
+        font-size:15px;
+        
+    }
+
+    
+    }
+    
+
+/*-------------------------------------------------------------------------------*/
+@media (max-width: 480px) {
+    .event {
+        flex-basis: 100%; /* one events per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .overlay {
+        position: absolute;
+        padding-top: 140px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        width: 80%;
+        height:100vh;
+        background-color: black;
+        opacity: 0.8;
+        padding-bottom: 30px;
+        font-size: 9px;
+        
+    }
+    .overlay h1{
+        font-size: 17px;
+        text-align: center;
+        font-style: oblique;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .overlay p{
+        font-size: 15px;
+        }
+    .overlay img{
+        height: 100px;
+        width: 320px;
+    }
+    .overlay .college-logo {
+        width: 60px; /* Set the width of the logo */
+        height: auto; /* Maintain aspect ratio */
+        margin-right:6px; /* Add spacing between the logo and the heading */
+    }
+    .overlay .college-info {
+        
+       display: contents;
+       font-size: 15px;
+        
+    }
+    .event-container {
+        display: flex;
+        flex-direction: row;
+        padding: 32px;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+        font-size: 6px; 
+        
+    }
+    .event-container2 {
+        display: flex;
+        flex-direction: row;
+        padding: 32px;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+        font-size: 6px; 
+        
+    }
+    .event-container2 img{
+        height: 80px;
+        width: 150px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    
+    .event-container h3 {
+        font-size: 15px;
+
+       }
+    
+    
+        .event-container2 h2
+        {
+     
+        font-size: 17px;
+        font-family:monospace;
+        
+        
+    }
+    .event-container2 p
+        {
+     
+        font-size: 15px;
+        font-family:monospace;
+        
+        
+    }
+    .event-container2 img{
+        height: 90px;
+        width: 250px;
+        padding-left: 54px;
+        
+    }
+    .overlay2 {
+        position: absolute;
+        
+        text-align: center;
+        color: white;
+        width: 100%;
+        height:100%;
+        background-color: black;
+        opacity: 0.8;
+        padding-bottom: 30px;
+        
+        
+    }
+    
+    .overlay2 h1 {
+        font-size: 15PX;
+        margin-bottom: 10px;
+    }
+    
+    .overlay2 p {
+        font-size:15px;
+        
+    }
+
+
+       
+}
+/*-------------------------------------------------------------------------------*/

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <video autoplay muted loop id="video-bg">
+        <source src="https://static.videezy.com/system/resources/previews/000/055/643/original/4K-235.mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="overlay">
+        <div class="buttons">
+            <button onclick="navigateTo('index.html')">Home</button>
+            <button onclick="navigateTo('tech.html')">Technical Events</button>
+            <button onclick="navigateTo('nontech.html')">Non-Technical Events</button>
+            <button onclick="navigateTo('workshop.html')">Workshop</button>
+        </div>
+        <br>
+        <h1>WORKSHOP</h1>
+        <div class="event-container">
+            <div class="event">
+                <h3><span style="color:yellowgreen ;">IOT APPLICATIONS USING MICRO PYTHON</span></h3>
+                <img src="https://builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-images/smart-cities-iot-application.png"alt="Event 1 Image">
+                <br><br>
+                <p style="font-size: 15px;text-align: justify;">Dive into the future of technology with our "IoT Applications Using MicroPython" workshop. Explore the limitless possibilities of Internet of Things as you learn to implement practical solutions and projects using the efficient MicroPython language. </p>
+                <br>
+                <button onclick="navigateTo('know9.html')">KNOW MORE</button><br><br>
+                <button id="registerButton9">REGISTER</button>
+
+<script>
+  document.getElementById("registerButton9").addEventListener("click", function() {
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSdOCCcZnlLQq6tXyXDfMwjEVJriF2rPW0h1FkHB56bGlDdmuQ/viewform", "_blank");
+  });
+</script>
+
+            
+        </div>
+        
+        
+    </div>
+    <p style="font-size: 15px;">For queries drop an email to meacon2024.vec@gmail.com</p>
+    </div>
+       
+    <script src="script.js"></script>
+</body>
+
+</html>
